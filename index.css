@@ -1,185 +1,180 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+
+/* navbar */
+nav {
+  background-color: #0f4c75;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar ul li a {
+  color: white;
+  padding: 0.5rem;
+  margin: 0 0.4rem;
+  border-bottom: 2px transparent solid;
+  font-size: small;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar ul li a:hover {
+  border-color: gold;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+}
+
+/* Navbar */
+
+/* header */
+
+section {
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+}
+
+.animateDiv {
+  background-color: white;
+  height: 100vh;
+  transition: background-color 1s;
+}
+
+/* social icon div */
+
+.social-icons {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* width: 10vh; */
+  top: 40%;
+  opacity: 0;
+}
+.icon {
+  position: relative;
+  margin-left: 25px;
+}
+.social-icons .icon .line {
+  position: absolute;
+  border-left: 2px dotted rgb(139, 243, 246);
+  height: 30px;
+  left: 30%;
+  top: 35px;
+}
+.social-icons .icon {
+  margin-bottom: 40px;
+}
+
+i {
+  color: rgb(130, 182, 175);
+}
+i:hover {
+  color: rgb(1, 255, 191);
+}
+
+.Home-content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  color: white;
+}
+.Home-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Home-content h1 {
+  font-size: 6rem;
+  font-family: "Ubuntu", sans-serif;
+}
+.Home-content p {
+  font-size: 1rem;
+  text-align: center;
+  display: inline-block;
+}
+
+.seprate-line {
+  height: 2px;
+  background-color: transparent;
+  margin-bottom: 10px;
+  animation: animate1 3s forwards ease-in;
+  animation-delay: 2s;
+}
+@keyframes animate1 {
+  from {
+    width: 0%;
   }
-  body {
-    font-family: "Roboto", sans-serif;
-    overflow-x: hidden;
-  
+  to {
+    width: 70%;
+    background-color: #5eaadd;
   }
-  .container {
-    max-width: 1200px;
-    margin: auto;
-  }
-  a {
-    text-decoration: none;
-  }
-  
-  /* navbar */
-  nav {
-    background-color: #0f4c75;
-    width: 100%;
-    z-index: 10;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  ul{
-      float:right;
-  }
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-    padding: 1rem;
-    flex-wrap: wrap;
-    
-  }
-  
-  .nav-ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  .navbar ul li a {
-    color: white;
-    padding: 0.5rem;
-    margin: 0 0.4rem;
-    border-bottom: 2px transparent solid;
-    font-size: small;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .navbar ul li a:hover {
-    border-color: gold;
-  }
-  
-  #logo {
-    width: 50px;
-    height: 50px;
-    color: #fff;
-  }
-  
-  /* Navbar */
-  
-  /* header */
-  
-  section {
-    display: grid;
-    grid-template-columns: repeat(10, auto);
-  }
-  
-  .animateDiv {
-    background-color: white;
-    height: 100vh;
-    transition: background-color 1s;
-  }
-  
-  /* social icon div */
-  
-  .social-icons {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* width: 10vh; */
-    top: 40%;
-    opacity: 0;
-  }
-  .icon {
-    position: relative;
-    margin-left: 25px;
-  }
-  .social-icons .icon .line {
-    position: absolute;
-    border-left: 2px dotted rgb(139, 243, 246);
-    height: 30px;
-    left: 30%;
-    top: 35px;
-  }
-  .social-icons .icon {
-    margin-bottom: 40px;
-  }
-  
- .showcase i {
-    color: rgb(130, 182, 175);
-  }
-  .showcase i:hover {
-    color: rgb(1, 255, 191);
-  }
-  
-  .Home-content {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    flex-direction: column;
-    color: white;
-  }
-  .Home-items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .Home-content h1 {
-    font-size: 6rem;
-    font-family: "Ubuntu", sans-serif;
-  }
-  .Home-content p {
-    font-size: 1rem;
-    text-align: center;
-    display: inline-block;
-  }
-  
-  .seprate-line {
-    height: 2px;
-    background-color: transparent;
-    margin-bottom: 10px;
-    animation: animate1 3s forwards ease-in;
-    animation-delay: 2s;
-  }
-  @keyframes animate1 {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 70%;
-      background-color: #5eaadd;
-    }
-  }
-  /* about us */
-  #About {
-    height: 100vh;
-  }
-  
-  /* services */
-  
-  /* clients */
-  
-  /* contact */
-  
-  /* footer */
-  
-  /* hamburger */
-  .hamburger {
-    background-color: transparent;
-    border: 0;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-    display: none;
-  }
-  .hamburger:focus {
-    outline: none;
-  }
-  
+}
+/* about us */
+#About {
+  height: 100vh;
+}
+
+/* services */
+
+/* clients */
+
+/* contact */
+
+/* footer */
+
+/* hamburger */
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.hamburger:focus {
+  outline: none;
+}
+
   @media screen and (max-width: 767px) {
     html,
     body,
@@ -247,7 +242,7 @@
   background: #fff;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  margin:15px;
+  margin: 15px;
   box-sizing: border-box;
   overflow: hidden;
   
