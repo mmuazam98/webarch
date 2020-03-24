@@ -515,7 +515,7 @@
   /*About & Services*/
   @media screen and (max-width: 600px) {
       #About{
-          min-height: 200vh;
+          min-height: 170vh;
       }
       #About p{
           font-size: 35px;
