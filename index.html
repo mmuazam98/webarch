@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,17 +29,17 @@
     />
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="index.css" />
-    
 
     <title>Webarch - Architects of the Web</title>
     <link rel="icon" href="logo.png" type="image/ico" />
   </head>
   <body>
+    
     <!-- navbar -->
     <section id="Navbar">
       <nav style="opacity: 0; position: absolute;" class="bg-transparent">
         <div class="container" id="container">
-          <div class="navbar">
+          <div class="navbar" id="nav">
             <img src="logo.png" alt="logo" id="logo" />
             <button class="hamburger" id="hamburger">
               <i class="fas fa-bars"></i>
@@ -48,29 +47,33 @@
             <ul class="nav-ul" id="nav-ul">
               <li><a href="#Home">Home</a></li>
               <li><a href="#About">About</a></li>
-              <li><a href="#Service">Services</a></li>
-              <li><a href="#client">Client</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#team">Team</a></li>
+              <li><a href="#Services">Services</a></li>
+              <li><a href="#Client">Client</a></li>
+              <li><a href="#Contact">Contact</a></li>
+              <li><a href="#Team">Team</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </section>
 
+    <!-- Showcase -->
+    
     <section id="Home">
       <!--Heading-->
       <div class="Home-content">
-        <div class="Home-items">
-          <img src="logo.png" alt="logo" class="logo" />
-          <h1 class="main-heading">
-            Webarch
-          </h1>
-          <div class="seprate-line"></div>
-          <p>
-            We know the industry, we know the game, and we're here to help your
-            goal move forward.
-          </p>
+        <div class="container py-5">
+          <div class="Home-items">
+            <img src="icons/logo.png" alt="logo" class="logo" />
+            <h1 class="main-heading">
+              Webarch
+            </h1>
+            <div class="seprate-line"></div>
+            <p>
+              We know the industry, we know the game, and we're here to help
+              your goal move forward.
+            </p>
+          </div>
         </div>
       </div>
       <div class="animateDiv"></div>
@@ -115,178 +118,266 @@
       </section>
     </section>
 
-    <!-- social icon and background -->
+    <!-- About -->
 
-   
-    <!--About-->
     <section id="About">
-         
-        <div class="Container">
-           
-            <div class="box">
-                <div class="icon">01</div>
-                <div class="content">
-                    <h3>What we do?</h3>
-                    <ul>
-                      <li>You think of an idea we implement it.</li>
-                       <li>We offer a wide range of services such as:</li>
-                       <ul>
-                          <li>Web design & development</li>
-                          <li>App development & Graphic design</li>
-                          <li>Photography & VFX</li>
-                          <li>& much more...</li>
-                       </ul>
-                    </ul>
-                </div>
+      <div class="container py-5">
+        <div class="about-content">
+          <div class="about-info">
+            <div class="about-1 py-10">
+              <h2 class="heading">ABOUT US</h2>
+              <h4>
+                We are a student body organisation and work towards developing
+                skills and also providing a learning platform in the university.
+              </h4>
+              <p class="left-border">Come and join us. It'll be fun.</p>
+              <div class="hr">
+                <h5>OUR AIMS</h5>
+                <div class="hr-line"></div>
+              </div>
             </div>
-            <div class="box">
-                <div class="icon">02</div>
-                <div class="content">
-                    <h3>What we are?</h3>
-                   <ul>
-                       <li>We are a team of young proficient and energitic who strive to deliver there best.</li>
-                       <li>We are the oldest technical club of SRM Institute of Science & Technology.</li>
-                       
-                </ul>
-                </div>
+            <div class="about-2">
+              <h4 class="heading-2">What we do?</h4>
+              <ul>
+                <li class="item">You think of an idea we implement it!</li>
+                <li class="item">We offer a wide range of services.</li>
+                <li class="item">Such as web designing and development.</li>
+                <li class="item">
+                  Graphic designing, mobile applications development and VFX
+                </li>
+                <li class="item">and many more...</li>
+              </ul>
             </div>
-            <div class="box">
-                <div class="icon">03</div>
-                <div class="content">
-                    <h3>Why us?</h3>
-                    <ul>
-                        <li>We know the industry, we know the game & we are here to help you grow.</li>
-                        <li>We also do research & build great products.</li>
-                        <li>We also provide a variety of services to our clients.</li>
-                        <li>We are Webarch.</li>
-                    </ul>
-                </div>
+            <div class="about-3">
+              <h4 class="heading-2">Who are we?
+              </h4>
+              <ul class="what-we-do__content__list">
+                <li class="item">
+                  We are a team of young, proficient and energetic minds who
+                  strive to deliver their best.
+                </li>
+                <li class="item">
+                  We are the oldest technical club of SRM Institute of Science
+                  and Technology.
+                </li>
+              </ul>
             </div>
+          </div>
+          <div class="about-4 py-10">
+            <div class="about-4-content"></div>
+              <h4>WHY US ?</h4>
+              <ul class="why us">
+                <li>We know the industry, we know the game and we are here to help you grow. </li>
+                <li class="item">We have the best team</li>
+                <li class="item">We are the Oldest and most experienced</li>
+                <li class="item">We are WebArch!</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+    <section id="Service"></section>
+    <section id="Client"></section>
+
+    <!-- services -->
+    <section id="Services">
+      <div class="container py-5">
+        <di class="heading">
+          <h2 class="p-2">SERVICES</h2>
+        </di>
+        <!-- row-1 -->
+        <div class="row mb-5">
+          <div class="col-md-3 col-6 p-3">
+            <div class="card" >
+              <img src="./images/web-design.jpg" class="card-img-top" alt="web-design">
+            
+              <div class="card-body">
+                <p class="card-text">WEB-DESIGN</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 p-3">
+            <div class="card">
+              <img src="./images/web-development.png" class="card-img-top" alt="web-development">
+              <div class="card-body">
+                <p class="card-text">WEB-DEVELOPMENT</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 p-3">
+            <div class="card">
+              <img src="./images/App-Development.jpg" class="card-img-top" alt="App-Development">
+              <div class="card-body">
+                <p class="card-text">APP-DEVELOPMENT</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 p-3">
+            <div class="card">
+              <img src="./images/Cyber-Security.jpg" class="card-img-top" alt="Cyber-Security">
+              <div class="card-body">
+                <p class="card-text">CYBER-SECURITY</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- row-2 -->
+        <div class="row  mb-5">
+          <div class="col-md-3 col-6  p-3">
+            <div class="card" >
+              <img src="./images/Graphic-Design.jpg" class="card-img-top" alt="Graphic-design">
+              <div class="card-body">
+                <p class="card-text">GRAPHIC-DESIGN</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 p-3">
+            <div class="card">
+              <img src="./images/R&D.jpg" class="card-img-top" alt="R&D">
+              <div class="card-body">
+                <p class="card-text">R&D</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 p-3">
+            <div class="card">
+              <img src="./images/Human Resource.jpg" class="card-img-top" alt="Human-Resources">
+              <div class="card-body">
+                <p class="card-text">HR</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 p-3">
+            <div class="card">
+              <img src="./images/Marketing.png" class="card-img-top" alt="Marketing">
+              <div class="card-body">
+                <p class="card-text">MARKETING</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- contact -->
+
+    <section id="Contact">
+      <div class="container py-5">
+        <div class="row">
+          <!-- col-1 -->
+          <div class="col-md-4  col-sm-12 py-5">
+            <div class="contact-items">
+              <h4 id="h4">PING US</h4>
+              <form>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    aria-describedby="name"
+                    placeholder="NAME"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="eMAIL"
+                    aria-describedby="email"
+                    placeholder="EMAIL"
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="2"
+                    placeholder="TYPE SOMETING NICE"
+                  ></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- col-2 -->
+          <div class="col-md-4 col-sm-12" id="contact-2">
+            <div class="contact-items">
+              <img src="logo.png" id="contact-logo" />
+            </div>
+            <p class="mt-3 h5" id="h5">Webarch - Architect Of The Web</p>
+            <p class="h6">SRM University of Science & Tecgnology</p>
+            <p>Mahatma Gandhi Rd, Potheri, SRM Nagar</p>
+            <p> Kattankulathur, Tamil Nadu.</p>
+            <p> 603203</p>
+
+          </div>
+          <!-- col-3 -->
+          <div class="col-md-4 col-sm-12 py-5">
+            <h4 id="h4">CONTACT</h4>
+            <div class="contact-items mt-3" id="contact-3">
+              <ul class="contact-link">
+                <li>
+                  <i class="fas fa-phone"></i
+                  ><span id="phone"><a href="tel:+919909902419">+91-9909902419</a></span>
+                </li>
+                <li>
+                  <i class="far fa-envelope-open"></i>
+                  <span
+                    ><a href="mailto:contactwebarch@gmail.com" class="mail"
+                      >contactwebarch@gmail.com</a
+                    ></span
+                  >
+                </li>
+              </ul>
+              <ul class="contact-icon">
+                <li class="icon">
+                  <a
+                    href="https://www.instagram.com/webarchclub/"
+                    target="_blank"
+                    ><i class="fab fa-instagram fa-2x"></i
+                  ></a>
+                </li>
+                <li class="icon">
+                  <a href="https://github.com/WebarchClub/" target="_blank"
+                    ><i class="fab fa-github fa-2x"></i
+                  ></a>
+                </li>
+                <li class="icon">
+                  <a
+                    href="https://www.linkedin.com/company/WebarchClub/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin fa-2x"></i
+                  ></a>
+                </li>
+                <li class="icon">
+                  <a
+                    href="https://www.facebook.com/webarchclub/"
+                    target="_blank"
+                    ><i class="fab fa-facebook fa-2x"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- footer -->
+    <section id="Footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>© Developed With <i class="fas fa-heart"></i> By Team Webarch | 2020</p>
+        </div>
+      </div>
+    </section>
 
-    <!--Services-->
-    
-    <section id="Service">
-        <section class="wrapper">
-              
-          <div class="CONTAINER">
-       
-              <div class="row">
-                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                      <div class="service_box blue">
-                          <div class="service_content">
-                              <h3 class="title">web design</h3>
-                              <p class="description">lorejhbsadj dshkv b sha384-DNOHZ68U8
-                                uagxjbabjbajscb adihciasc jahsjcm achakd auhdjbac isnkca
-                              </p>
-                              <div class="service_icon">
-                                  <span><i class="fa fa-globe"></i> </span>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-   
-                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                   <div class="service_box blue">
-                       <div class="service_content">
-                           <h3 class="title">web development</h3>
-                           <p class="description">lorejhbsadj dshkv b sha384-DNOHZ68U8
-                             uagxjbabjbajscb adihciasc jahsjcm achakd auhdjbac isnkca
-                           </p>
-                           <div class="service_icon">
-                               <span><i class="fa fa-rocket"></i> </span>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-                  
-               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                <div class="service_box blue">
-                    <div class="service_content">
-                        <h3 class="title">App development</h3>
-                        <p class="description">lorejhbsadj dshkv b sha384-DNOHZ68U8
-                          uagxjbabjbajscb adihciasc jahsjcm achakd auhdjbac isnkca
-                        </p>
-                        <div class="service_icon">
-                            <span><i class="fa fa-mobile"></i> </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-              <div class="service_box blue">
-                  <div class="service_content">
-                      <h3 class="title">graphic designing</h3>
-                      <p class="description">lorejhbsadj dshkv b sha384-DNOHZ68U8
-                        uagxjbabjbajscb adihciasc jahsjcm achakd auhdjbac isnkca
-                      </p>
-                      <div class="service_icon">
-                          <span><i class="fa fa-paper-plane"></i> </span>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-            <div class="service_box blue">
-                <div class="service_content">
-                    <h3 class="title">HR & Marketing</h3>
-                    <p class="description">lorejhbsadj dshkv b sha384-DNOHZ68U8
-                      uagxjbabjbajscb adihciasc jahsjcm achakd auhdjbac isnkca
-                    </p>
-                    <div class="service_icon">
-                        <span><i class="fa fa-user-circle"></i> </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-          <div class="service_box blue">
-              <div class="service_content">
-                  <h3 class="title">R&D</h3>
-                  <p class="description">lorejhbsadj dshkv b sha384-DNOHZ68U8
-                    uagxjbabjbajscb adihciasc jahsjcm achakd auhdjbac isnkca
-                  </p>
-                  <div class="service_icon">
-                      <span><i class="fa fa-space-shuttle"></i> </span>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-        <div class="service_box blue">
-            <div class="service_content">
-                <h3 class="title">Photography & VFX</h3>
-                <p class="description">lorejhbsadj dshkv b sha384-DNOHZ68U8
-                  uagxjbabjbajscb adihciasc jahsjcm achakd auhdjbac isnkca
-                </p>
-                <div class="service_icon">
-                    <span><i class="fa fa-camera"></i> </span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-      <div class="service_box blue">
-          <div class="service_content">
-              <h3 class="title">Cyber security</h3>
-              <p class="description">lorejhbsadj dshkv b sha384-DNOHZ68U8
-                uagxjbabjbajscb adihciasc jahsjcm achakd auhdjbac isnkca
-              </p>
-              <div class="service_icon">
-                  <span><i class="fa fa-user-secret"></i> </span>
-              </div>
-          </div>
-      </div>
-  </div>
-      </div>
-</div>
-</section>              
-      
-    <section id="Client"></section>
-    <section id="Contact"></section>
-    <section id="Footer"></section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
     <script src="script.js"></script>
   </body>
